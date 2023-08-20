@@ -1,3 +1,9 @@
+# 如果启用此选项,则工作区中的本地包优先于注册表中的包,即使注册表中有更新版本的包也是如此
+prefer-workspace-packages: true
+
 packages:
   - "apps/*"
   - "packages/*"
+  - "frameworks/*"
+  - "components/**"
+  - "!**/test/**"
